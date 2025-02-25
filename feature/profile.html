@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styleindex.css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleprofile.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -15,8 +15,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex align-items-center">
-            <a class="navbar-brand text-white fs-2 fw-bold" href="index.html">
-                Profile 
+            <a class="navbar-brand text-white fs-2 fw-bold" href="../index.html">
+                Profile
             </a>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,79 +25,88 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white active fs-5" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fs-5" href="feature\profile.html">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fs-5" href="feature\about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active fs-5" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fs-5" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white fs-5" href="about.html">About</a></li>
                 </ul>
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi theme-icon-active" data-theme-icon-active="bi-brightness-high" style="font-size: 1.75rem;"></i>
-                    </button>                    
+                        <i class="bi theme-icon-active" data-theme-icon-active="bi-brightness-high"
+                            style="font-size: 1.75rem;"></i>
+                    </button>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                            <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
-                                <i class="bi bi-brightness-high me-2 fs-5" data-theme-icon="bi-brightness-high"></i> Light
+                            <button class="dropdown-item d-flex align-items-center" type="button"
+                                data-bs-theme-value="light">
+                                <i class="bi bi-brightness-high me-2 fs-5" data-theme-icon="bi-brightness-high"></i>
+                                Light
                             </button>
                         </li>
                         <li>
-                            <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
+                            <button class="dropdown-item d-flex align-items-center" type="button"
+                                data-bs-theme-value="dark">
                                 <i class="bi bi-moon-fill me-2 fs-5" data-theme-icon="bi-moon-fill"></i> Dark
                             </button>
                         </li>
                         <li>
-                            <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
+                            <button class="dropdown-item d-flex align-items-center" type="button"
+                                data-bs-theme-value="auto">
                                 <i class="bi bi-circle-half me-2 fs-5" data-theme-icon="bi-circle-half"></i> Auto
                             </button>
                         </li>
                     </ul>
-                </div>                
+                </div>
             </div>
         </div>
     </nav>
+    </section>
 
-    <!-- Jumbotron -->
-    <section class="jumbotron">
-        <div class="jumbotron-overlay">
-            <img src="img\p4ga3jgyoxs01.gif" class="jumbotron-img" alt="Ottoman background">
-            <div class="jumbotron-text">
-                <h1>halaman Utama</h1>
-                <p>Website responsive dengan menggunakan HTML, CSS, dan Bootstrap yang dibuat oleh Habib Al Qodri
-                </p>
+    <img src="../img/p4ga3jgyoxs01.gif" class="jumbotron-img" alt="Ottoman background" 
+    style="width: 100%; height: 100vh; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+        <div class="foto-card">
+            <img class="img-card" src="../img\profille.jpg" alt="profile">
+            <div class="foto-descrip">
+                <table>
+                    <tr>
+                        <td><b>Nama:</b></td>
+                        <td>Habib Al Qodri</td>
+                    </tr>
+                    <tr>
+                        <td><b>NPM:</b></td>
+                        <td>G1A023047</td>
+                    </tr>
+                    <tr>
+                        <td><b>Alamat:</b></td>
+                        <td>Kandang Limun, Kota Bengkulu</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <div class="container about-section mt-3 pt-3">
-        <div class="row text-center mb-3">
-            <div class="col">
-                <h2>Penjelasan</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center text-center">
-            <div class="col-md-4">
-               Website ini akan berisikan profile, landing page sederhana, dan juga beberapa penjelasan diri yang akan ditampilkan pada website.
-            </div>
-            <div class="col-md-4">
-               Mengguakan instrumen HTML, CSS dan style Bootstrap dalam proses developing membuat pengerjaan menjadi lebih efisien dan efektif.
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="text-center bg-warning-subtle text-dark mt-5">
         <div class="container pt-4">
             <div class="mb-4">
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.youtube.com/@habibalqodri3112"><i class="bi bi-youtube"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/habibfong/"><i class="bi bi-instagram"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/HabibAlQodri"><i class="bi bi-github"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://wa.me/6289515839924?text=Hallo" target="_blank">
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.youtube.com/@habibalqodri3112"><i
+                        class="bi bi-youtube"></i></a>
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/habibfong/"><i
+                        class="bi bi-instagram"></i></a>
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/HabibAlQodri"><i
+                        class="bi bi-github"></i></a>
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://wa.me/6289515839924?text=Hallo"
+                    target="_blank">
                     <i class="bi bi-whatsapp"></i>
-                </a>                                
+                </a>
             </div>
         </div>
         <div class="text-center p-3 bg-dark text-white">
-            © 2025 Copyright: <a class="text-white" href="https://habibalqodri.github.io/TugasWeb-PortoLogin/profile.html">Habib Al Qodri</a>
+            © 2025 Copyright: <a class="text-white"
+                href="https://habibalqodri.github.io/TugasWeb-PortoLogin/profile.html">Habib Al Qodri</a>
         </div>
     </footer>
     <script>
@@ -171,7 +180,7 @@
         })();
 
     </script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
